@@ -8,7 +8,7 @@ import "@/app/globals.css";
 import PixelCard from "./pixelCard.js";
 
 const MainPg = () => {
-  const title = "ELECTROTHON 7.0";
+  const title = "ELECTROTHON 8.0";
   const titleRef = useRef(null);
   const subtitleRef = useRef(null); // Ref for "Colosseum of Code"
 
@@ -103,7 +103,7 @@ const MainPg = () => {
               padding: "0 20px",
             }}
           >
-            Colosseum of Code
+            Arcadium of Algorithms
           </span>
         </div>
 
@@ -119,7 +119,7 @@ const MainPg = () => {
               /> */}
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-transparent backdrop-blur-md border-[#7777771c] border-[10px] rounded-lg z-0">
                 <div className="md:text-[53px] sm:text-[40px] text-[30px] strandall sm:tracking-widest tracking-wider text-white leading-none sm:leading-[35px] text-center">
-                  See you next time!!
+                  Coming Soon!!
                 </div>
                 {/* <div className="abhaya-libre-regular sm:leading-[55px] leading-[40px] md:scale-100 sm:scale-90 scale-75 lg:leading-[75px] flex w-full justify-center items-center">
                   <div className="flex items-center justify-center text-[50px] text-[#c7aa73] font-light space-x-1">
