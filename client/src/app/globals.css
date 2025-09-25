@@ -1,26 +1,299 @@
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url(https://db.onlinewebfonts.com/c/f70b18e78f0c256d3aa0ecb00daf64c9?family=Linotype+Humanistika+W01);
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Italianno&display=swap");
+
+/* Global optimization styles */
+.reduce-animation * {
+  animation-duration: 0.001s !important;
+  transition-duration: 0.001s !important;
+  animation-delay: 0s !important;
+  transition-delay: 0s !important;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Optimization for LCP */
+span.inkwell {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 150px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Core styles */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Linotype Humanistika W01";
+  src: url("https://db.onlinewebfonts.com/t/f70b18e78f0c256d3aa0ecb00daf64c9.eot");
+  src: url("https://db.onlinewebfonts.com/t/f70b18e78f0c256d3aa0ecb00daf64c9.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f70b18e78f0c256d3aa0ecb00daf64c9.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f70b18e78f0c256d3aa0ecb00daf64c9.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/f70b18e78f0c256d3aa0ecb00daf64c9.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f70b18e78f0c256d3aa0ecb00daf64c9.svg#Linotype Humanistika W01")
+      format("svg");
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "font";
+  src: url("/fonts/navfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Italianno";
+  src: url("/fonts/Italianno-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mordred";
+  src: url("/fonts/Mordred.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "strandall";
+  src: url("/fonts/strandall.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gatterys";
+  src: url("/fonts/Gatterys.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "inkwell";
+  src: url("/fonts/inkwell-scribe.otf");
+  font-weight: normal;
+
+}
+
+/* Force Humanistika font for Tailwind class */
+.font-humanistika {
+  font-family: "Linotype Humanistika W01", sans-serif !important;
+}
+
+@font-face {
+  font-family: 'Eleanora';
+  src: url('/fonts/Eleanora.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.inkwell{
+  font-family: "inkwell";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Gatterys{
+  font-family: "Gatterys";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.strandall{
+  font-family: "strandall";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Mordred{
+  font-family: "Mordred";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Colder-Weather-Regular";
+  src: url("/fonts/Colder-Weather-Regular.woff") format("woff"),
+    url("/fonts/Colder-Weather-Regular.svg#Colder-Weather-Regular")
+      format("svg"),
+    url("/fonts/Colder-Weather-Regular.eot"),
+    url("/fonts/Colder-Weather-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.Italianno {
+  font-family: "Italianno";
+}
+
+.macondo-swash-caps-regular {
+  font-family: "Macondo Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.island-moments-regular {
+  font-family: "Island Moments";
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+.abhaya-libre-regular {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.navfont {
+  font-family: "font";
+}
+
+.timeLeftToRegister {
+  font-family: "Colder-Weather-Regular";
+}
+
+.amiri-regular {
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: "swap";
+}
+
+.amiri-bold {
+  font-family: "Amiri", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.amiri-regular-italic {
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.amiri-bold-italic {
+  font-family: "Amiri", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.italianno-regular {
+  font-family: "Italianno", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: "swap";
+}
+
+/* Global styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+img {
+  background-color: transparent;
+}
+
+img.lazy {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+img.lazy.loaded {
+    opacity: 1;
+}
+
+/* Add this to styles/globals.css */
+.loader {
+    border-top-color: #3498db; /* Change this color to fit your theme */
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@layer utilities {
+  @keyframes scrollX {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes scrollXReverse {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-scrollX {
+    animation: scrollX var(--duration) linear infinite;
+  }
+  
+  .animate-scrollX-reverse {
+    animation: scrollXReverse var(--duration) linear infinite;
+  }
+}
+
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff; /* Scrollbar handle color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BC8741; /* Color on hover */
 }

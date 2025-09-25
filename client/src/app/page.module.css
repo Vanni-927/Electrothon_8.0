@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Pirata One';
+    src: url('./fonts/PirataOne-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+.title {
+    font-family: 'Pirata One', monospace;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    opacity: 0.9;
+    margin-bottom: -10px;
+
+
+}
+
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 4rem;
+
+        margin: 1.2rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+
+        margin: 0.8rem 0;
+    }
+}
+
+/* Add styles for Run of Show container to fix double scrollbar issue */
+.run-of-show-container {
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  overflow: visible;
+}

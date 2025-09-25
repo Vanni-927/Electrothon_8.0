@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap");
+
+.looked {
+  background: linear-gradient(180deg, #29e1ff 0%, #fff61d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modern-button {
+  background: linear-gradient(99.63%, #def200, #23a3ff);
+  width: fit-content;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.modern-button::before {
+  content: "";
+  position: absolute;
+  background-color: #23a3ff;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.modern-button:hover {
+  color: #def200;
+  transform: scale(0.9);
+}
+
+.modern-button:hover::before {
+  transform: scaleX(1);
+}
