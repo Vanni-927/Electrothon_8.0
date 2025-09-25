@@ -158,7 +158,7 @@ export default function JudgesSection() {
           transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          Our Judges and Speakers
+          Previous Judges & Speakers
         </motion.h2>
 
         <div className="relative w-full flex items-center justify-center">
@@ -213,7 +213,7 @@ export default function JudgesSection() {
           transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          Our Mentors
+          Our Esteemed Mentors
         </motion.h2>
 
         <div className="relative w-full flex items-center justify-center">

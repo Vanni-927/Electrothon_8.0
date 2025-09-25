@@ -12,7 +12,8 @@ export default function Organizers() {
       id="Organizers"
       className="bg-transparent relative w-full h-auto text-center items-center px-4 md:px-16 lg:px-32"
     >
-      {/* Lead Organizers Section */}
+      {/*
+      // Lead Organizers Section
       <h2
         className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] text-white text-center mb-6 md:mb-10"
         style={{
@@ -35,7 +36,7 @@ export default function Organizers() {
         ))}
       </div>
 
-      {/* Organizers Section */}
+      // Organizers Section
       <h2
         className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] text-white text-center mb-6 md:mb-8 md:mt-14 custom:mt-12 xs:mt-10"
         style={{
@@ -47,6 +48,7 @@ export default function Organizers() {
       </h2>
 
       <OrganizersLogoWall />
+      */}
     </div>
   );
 }

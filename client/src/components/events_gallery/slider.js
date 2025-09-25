@@ -86,7 +86,7 @@ const DualSlider = () => {
         viewport={{ once: true }}
         
       >
-        Events Gallery
+        Glimpses of Last Electrothon
       </motion.h1>
 
       {/* First Slider (Left Scroll) */}

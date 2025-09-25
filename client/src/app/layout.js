@@ -36,7 +36,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Electrothon 7.0 | NITH",
+  title: "Electrothon 8.0 | NITH",
   description:
     "As foretold in ancient scrolls, this era of Electrothon gathers the most skilled craftsmen and visionaries. To harness the unknown and forge it into reality is no less than a Herculean feat. Yet, with the seventh tournament of Electrothon upon us, we march into this noble colosseum with unwavering resolve. Under the banner of the SPEC guild at NIT Hamirpur, Electrothon has captivated thousands of aspiring artisans. Those who have journeyed through its gates left no stone unturned, ensuring their craft etched a legacy upon these storied grounds. The Hall of Forges pulses with the fervor of Electrothon, ready to rise to new heights this winter as we once again summon the next generation of creators.",
   keywords: [
@@ -46,12 +46,12 @@ export const metadata = {
     "NIT Hamirpur",
     "Coding",
     "Innovation",
-    "Electrothon 7.0",
+    "Electrothon 8.0",
     "SPEC",
   ],
   authors: [{ name: "Team SPEC" }],
   openGraph: {
-    title: "Electrothon 7.0 | Colosseum of Code",
+    title: "Electrothon 8.0 | Colosseum of Code",
     description:
       "As foretold in ancient scrolls, this era of Electrothon gathers the most skilled craftsmen and visionaries. To harness the unknown and forge it into reality is no less than a Herculean feat. Yet, with the seventh tournament of Electrothon upon us, we march into this noble colosseum with unwavering resolve. Under the banner of the SPEC guild at NIT Hamirpur, Electrothon has captivated thousands of aspiring artisans. Those who have journeyed through its gates left no stone unturned, ensuring their craft etched a legacy upon these storied grounds. The Hall of Forges pulses with the fervor of Electrothon, ready to rise to new heights this winter as we once again summon the next generation of creators.",
     url: "https://electrothon.nith.ac.in/",
@@ -59,13 +59,13 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Electrothon 7.0 - NITH",
+    title: "Electrothon 8.0 - NITH",
     description:
       "As foretold in ancient scrolls, this era of Electrothon gathers the most skilled craftsmen and visionaries. To harness the unknown and forge it into reality is no less than a Herculean feat. Yet, with the seventh tournament of Electrothon upon us, we march into this noble colosseum with unwavering resolve. Under the banner of the SPEC guild at NIT Hamirpur, Electrothon has captivated thousands of aspiring artisans. Those who have journeyed through its gates left no stone unturned, ensuring their craft etched a legacy upon these storied grounds. The Hall of Forges pulses with the fervor of Electrothon, ready to rise to new heights this winter as we once again summon the next generation of creators.",
   },
   appleWebApp: {
     capable: true,
-    title: "Electrothon 7.0",
+    title: "Electrothon 8.0",
   },
 };
 
@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <title>Electrothon 7.0 | NITH</title>
+        <title>Electrothon 8.0 | NITH</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
           rel="stylesheet"
