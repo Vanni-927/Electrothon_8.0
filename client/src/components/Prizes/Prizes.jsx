@@ -257,121 +257,121 @@ const fadeInText = {
 };
 
 const Prizes = () => {
-  return (
+  return //(
      
-    <div id="prizes" className="w-full h-auto items-center justify-center flex flex-col bg-transparent">
-      {/* Heading Animation */}
-      <motion.h1
-        variants={fadeInFromBottom}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        style={{ textShadow: "-5px 8px 4px rgba(0, 0, 0, 0.5)" }}
-        className="text-white text-[20px] md:text-[70px] sm:text-[60px] custom:text-[40px] xs:text-[40px] lg:text-[4.5rem] pirata-one-regular mb-8"
-      >
-        Winners
-      </motion.h1>
+    // <div id="prizes" className="w-full h-auto items-center justify-center flex flex-col bg-transparent">
+    //   {/* Heading Animation */}
+    //   <motion.h1
+    //     variants={fadeInFromBottom}
+    //     initial="hidden"
+    //     whileInView="show"
+    //     viewport={{ once: true }}
+    //     style={{ textShadow: "-5px 8px 4px rgba(0, 0, 0, 0.5)" }}
+    //     className="text-white text-[20px] md:text-[70px] sm:text-[60px] custom:text-[40px] xs:text-[40px] lg:text-[4.5rem] pirata-one-regular mb-8"
+    //   >
+    //     Winners
+    //   </motion.h1>
 
-      {/* Prizes Cards Section */}
-      <motion.div
-              variants={fadeInScale}
-              className="relative w-full max-w-[95vw] sm:max-w-[70vw] bg-[#03294F] opacity-80 rounded-[30px] sm:rounded-[50px] z-0 pt-[6vh] pb-[2vh] px-[4vh] mx-auto border"
-            >
-      <div className="flex lg:flex-row flex-col gap-10 custom:gap-5 items-center justify-center h-auto">
-        {/* First Runner Up */}
-        <motion.div
-          variants={cardVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="card-wrapper2 h-[34vh] lg:h-[28vh] xl:h-[32vh] md:h-[30vh] w-full lg:w-[20vw] sm:h-[28vh] custom:h-[24vh] xs:h-[22vh]"
-        >
-          <div className="..."></div>
-          <div className="card-content2 flex flex-col items-center text-center justify-center text-xs">
-            {/* <motion.div variants={videoVariants} initial="hidden" whileInView="show" viewport={{ once: true }}>
-              <ReactPlayer url={Silver2} playing muted width="100%" height="auto" controls={false} loop />
-            </motion.div> */}
-            <img src="/asset/winners/runnerup.jpg" alt="runner up" className="w-40 md:w-48 lg:w-56 h-auto object-cover rounded-xl border border-white shadow-lg mt-4"></img>
-            <h1 className="font-sans font-bold text-[#dadada] text-5xl md:text-3xl sm:text-2xl custom:text-xl xs:text-base">
-              25K INR
-            </h1>
-            <h1 className="font-sans font-medium text-[#dadada] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
-              First Runner Up
-            </h1>
-             <h1 className="font-sans font-medium text-[#dadada] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
-              Team La Casa De Code
-            </h1>
-          </div>
-        </motion.div>
+    //   {/* Prizes Cards Section */}
+    //   <motion.div
+    //           variants={fadeInScale}
+    //           className="relative w-full max-w-[95vw] sm:max-w-[70vw] bg-[#03294F] opacity-80 rounded-[30px] sm:rounded-[50px] z-0 pt-[6vh] pb-[2vh] px-[4vh] mx-auto border"
+    //         >
+    //   <div className="flex lg:flex-row flex-col gap-10 custom:gap-5 items-center justify-center h-auto">
+    //     {/* First Runner Up */}
+    //     <motion.div
+    //       variants={cardVariants}
+    //       initial="hidden"
+    //       whileInView="show"
+    //       viewport={{ once: true }}
+    //       className="card-wrapper2 h-[34vh] lg:h-[28vh] xl:h-[32vh] md:h-[30vh] w-full lg:w-[20vw] sm:h-[28vh] custom:h-[24vh] xs:h-[22vh]"
+    //     >
+    //       <div className="..."></div>
+    //       <div className="card-content2 flex flex-col items-center text-center justify-center text-xs">
+    //         {/* <motion.div variants={videoVariants} initial="hidden" whileInView="show" viewport={{ once: true }}>
+    //           <ReactPlayer url={Silver2} playing muted width="100%" height="auto" controls={false} loop />
+    //         </motion.div> */}
+    //         <img src="/asset/winners/runnerup.jpg" alt="runner up" className="w-40 md:w-48 lg:w-56 h-auto object-cover rounded-xl border border-white shadow-lg mt-4"></img>
+    //         <h1 className="font-sans font-bold text-[#dadada] text-5xl md:text-3xl sm:text-2xl custom:text-xl xs:text-base">
+    //           25K INR
+    //         </h1>
+    //         <h1 className="font-sans font-medium text-[#dadada] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
+    //           First Runner Up
+    //         </h1>
+    //          <h1 className="font-sans font-medium text-[#dadada] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
+    //           Team La Casa De Code
+    //         </h1>
+    //       </div>
+    //     </motion.div>
 
-        {/* Winner */}
-        <motion.div
-          variants={cardVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="card-wrapper h-[34vh] lg:h-[28vh] xl:h-[32vh] md:h-[30vh] w-full lg:w-[20vw] sm:h-[28vh] custom:h-[24vh] xs:h-[22vh]"
-        >
-          <div className="..."></div>
-          <div className="card-content flex flex-col items-center text-center justify-center text-xs">
-            {/* <motion.div variants={videoVariants} initial="hidden" whileInView="show" viewport={{ once: true }}>
-              <ReactPlayer url={Gold3} playing muted width="100%" height="auto" controls={false} loop />
-            </motion.div> */}
-            <img src="/asset/winners/winner.jpg" alt="Winner" className="w-40 md:w-48 lg:w-56 h-auto object-cover rounded-xl border border-white shadow-lg"></img>
-            <h1 className="font-sans font-bold text-[#ffea2b] text-5xl md:text-3xl sm:text-2xl custom:text-xl xs:text-base">
-              35K INR
-            </h1>
-            <h1 className="font-sans font-medium text-[#ffea2b] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
-              Winner
-            </h1>
-            <h1 className="font-sans font-medium text-[#ffea2b] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
-              Team GCC
-            </h1>
-          </div>
-        </motion.div>
+    //     {/* Winner */}
+    //     <motion.div
+    //       variants={cardVariants}
+    //       initial="hidden"
+    //       whileInView="show"
+    //       viewport={{ once: true }}
+    //       className="card-wrapper h-[34vh] lg:h-[28vh] xl:h-[32vh] md:h-[30vh] w-full lg:w-[20vw] sm:h-[28vh] custom:h-[24vh] xs:h-[22vh]"
+    //     >
+    //       <div className="..."></div>
+    //       <div className="card-content flex flex-col items-center text-center justify-center text-xs">
+    //         {/* <motion.div variants={videoVariants} initial="hidden" whileInView="show" viewport={{ once: true }}>
+    //           <ReactPlayer url={Gold3} playing muted width="100%" height="auto" controls={false} loop />
+    //         </motion.div> */}
+    //         <img src="/asset/winners/winner.jpg" alt="Winner" className="w-40 md:w-48 lg:w-56 h-auto object-cover rounded-xl border border-white shadow-lg"></img>
+    //         <h1 className="font-sans font-bold text-[#ffea2b] text-5xl md:text-3xl sm:text-2xl custom:text-xl xs:text-base">
+    //           35K INR
+    //         </h1>
+    //         <h1 className="font-sans font-medium text-[#ffea2b] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
+    //           Winner
+    //         </h1>
+    //         <h1 className="font-sans font-medium text-[#ffea2b] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
+    //           Team GCC
+    //         </h1>
+    //       </div>
+    //     </motion.div>
 
-        {/* Second Runner Up */}
-        <motion.div
-          variants={cardVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="card-wrapper3 h-[34vh] lg:h-[28vh] xl:h-[32vh] md:h-[30vh] w-full lg:w-[20vw] sm:h-[28vh] custom:h-[24vh] xs:h-[22vh]"
-        >
-          <div className="..."></div>
-          <div className="card-content3 flex flex-col items-center text-center justify-center">
-            {/* <motion.div variants={videoVariants} initial="hidden" whileInView="show" viewport={{ once: true }}>
-              <ReactPlayer url={Bronze2} playing muted width="100%" height="auto" controls={false} loop />
-            </motion.div> */}
-            <img src="/asset/winners/runnerup2.png" alt="Winner" className="w-40 md:w-48 lg:w-56 h-auto object-cover rounded-xl border border-white shadow-lg mt-4"></img>
-            <h1 className="font-sans items-center justify-center font-bold text-[#eb9029] text-5xl md:text-3xl sm:text-2xl custom:text-xl xs:text-base ">
-              15K INR
-            </h1>
-            <h1 className="font-sans font-medium text-[#eb9029] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
-              Second Runner Up
-            </h1>
-            <h1 className="font-sans font-medium text-[#eb9029] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
-              Team Innovation Station
-            </h1>
-          </div>
-        </motion.div>
-      </div>
-       </motion.div>
+    //     {/* Second Runner Up */}
+    //     <motion.div
+    //       variants={cardVariants}
+    //       initial="hidden"
+    //       whileInView="show"
+    //       viewport={{ once: true }}
+    //       className="card-wrapper3 h-[34vh] lg:h-[28vh] xl:h-[32vh] md:h-[30vh] w-full lg:w-[20vw] sm:h-[28vh] custom:h-[24vh] xs:h-[22vh]"
+    //     >
+    //       <div className="..."></div>
+    //       <div className="card-content3 flex flex-col items-center text-center justify-center">
+    //         {/* <motion.div variants={videoVariants} initial="hidden" whileInView="show" viewport={{ once: true }}>
+    //           <ReactPlayer url={Bronze2} playing muted width="100%" height="auto" controls={false} loop />
+    //         </motion.div> */}
+    //         <img src="/asset/winners/runnerup2.png" alt="Winner" className="w-40 md:w-48 lg:w-56 h-auto object-cover rounded-xl border border-white shadow-lg mt-4"></img>
+    //         <h1 className="font-sans items-center justify-center font-bold text-[#eb9029] text-5xl md:text-3xl sm:text-2xl custom:text-xl xs:text-base ">
+    //           15K INR
+    //         </h1>
+    //         <h1 className="font-sans font-medium text-[#eb9029] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
+    //           Second Runner Up
+    //         </h1>
+    //         <h1 className="font-sans font-medium text-[#eb9029] text-xl md:text-lg sm:text-base xs:text-xs custom:text-xs">
+    //           Team Innovation Station
+    //         </h1>
+    //       </div>
+    //     </motion.div>
+    //   </div>
+    //    </motion.div>
 
-      {/* Final Text Animation
-      <motion.h1
-        variants={fadeInText}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        style={{ textShadow: "-5px 8px 4px rgba(0, 0, 0, 0.5)" }}
-        className="text-white text-[10px] md:text-[1.5rem] sm:text-[1.5rem] custom:text-[1.5rem] xs:text-[1.5rem] lg:text-[1.5rem] font-sans font-semibold mt-5 mb-8"
-      >
-        Includes prizes worth 5K
-      </motion.h1> */}
-    </div>
+    //   {/* Final Text Animation
+    //   <motion.h1
+    //     variants={fadeInText}
+    //     initial="hidden"
+    //     whileInView="show"
+    //     viewport={{ once: true }}
+    //     style={{ textShadow: "-5px 8px 4px rgba(0, 0, 0, 0.5)" }}
+    //     className="text-white text-[10px] md:text-[1.5rem] sm:text-[1.5rem] custom:text-[1.5rem] xs:text-[1.5rem] lg:text-[1.5rem] font-sans font-semibold mt-5 mb-8"
+    //   >
+    //     Includes prizes worth 5K
+    //   </motion.h1> */}
+    // </div>
    
-  );
+  // );
 };
 
 export default Prizes;

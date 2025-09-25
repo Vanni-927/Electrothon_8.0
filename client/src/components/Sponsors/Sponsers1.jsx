@@ -37,7 +37,7 @@ const Sponsors1 = () => {
     >
       {/* Main Heading */}
       <motion.div variants={fadeInUp}>
-        <Heading>Our Sponsors</Heading>
+        <Heading>Previous Sponsors</Heading>
       </motion.div>
 
       {/* Event Partner Section */}

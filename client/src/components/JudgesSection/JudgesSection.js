@@ -202,10 +202,10 @@ export default function JudgesSection() {
         </div>
       </div>
 
-      <div className="relative w-full flex flex-col items-center justify-start">
+      {/* <div className="relative w-full flex flex-col items-center justify-start"> */}
         
         {/* Animated Title */}
-        <motion.h2
+        {/* <motion.h2
           className={`${pirataOne.className} text-[40px] sm:text-[60px] md:text-[4.5rem] text-center text-white mt-3 mb-6 sm:mb-8 md:mb-10`}
           style={{ textShadow: "-5px 8px 4px rgba(0, 0, 0, 0.5)" }}
           initial={{ opacity: 0, y: 50 }}
@@ -214,22 +214,22 @@ export default function JudgesSection() {
           viewport={{ once: true }}
         >
           Our Esteemed Mentors
-        </motion.h2>
+        </motion.h2> */}
 
-        <div className="relative w-full flex items-center justify-center">
+        {/* <div className="relative w-full flex items-center justify-center"> */}
           
           {/* Left Button */}
-          <motion.button
+          {/* <motion.button
             className="absolute left-2 sm:left-5 md:left-8 bg-transparent text-white z-10 opacity-50 hover:opacity-100"
             onClick={() => scroll("left", "mentors")}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
             <LeftArrowIcon />
-          </motion.button>
+          </motion.button> */}
 
           {/* Mentors Scrollable List */}
-          <motion.div
+          {/* <motion.div
             ref={mentorsScrollRef}
             className="flex overflow-x-auto scrollbar-hide w-full max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-6xl space-x-6 px-4 sm:px-6 md:px-8"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
@@ -241,21 +241,21 @@ export default function JudgesSection() {
             {mentors.map((mentor, index) => (
               <JudgeCard key={mentor.id} judge={mentor} index={index} />
             ))}
-          </motion.div>
+          </motion.div> */}
 
 
           {/* Right Button */}
-          <motion.button
+          {/* <motion.button
             className="absolute right-2 sm:right-5 md:right-8 bg-transparent text-white z-10 opacity-50 hover:opacity-100"
             onClick={() => scroll("right", "mentors")}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
           >
             <RightArrowIcon />
-          </motion.button>
+          </motion.button> */}
 
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
     </section>
  );
 }

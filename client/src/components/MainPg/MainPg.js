@@ -103,7 +103,7 @@ const MainPg = () => {
               padding: "0 20px",
             }}
           >
-            Arcadium of Algorithms
+            Labyrinth of Eternum
           </span>
         </div>
 
@@ -117,7 +117,7 @@ const MainPg = () => {
                 className="absolute inset-0 w-full h-full z-10 rounded-lg opacity-50"
                 variant="default"
               /> */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-transparent backdrop-blur-md border-[#7777771c] border-[10px] rounded-lg z-0">
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-transparent border-[#7777771c] z-0">
                 <div className="md:text-[53px] sm:text-[40px] text-[30px] strandall sm:tracking-widest tracking-wider text-white leading-none sm:leading-[35px] text-center">
                   Coming Soon!!
                 </div>

@@ -337,14 +337,14 @@ const Navbar = () => {
           top: "0",
         }}
       >
-        <Image
+        {/* <Image
           className="max-lg:w-[70px]"
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
           width={100}
           height={100}
           alt="Major League Hacking 2025 Hackathon Season"
           style={{ width: "100%", height: "auto" }}
-        />
+        /> */}
       </Link>
     </div>
   );

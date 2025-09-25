@@ -104,30 +104,35 @@ const Timeline = () => {
   //   };
   // }, [logoPosition, isScrolling]); // Only depend on logoPosition and isScrolling
 
-  return (
-    <div id="timeline" className="relative bg-cover bg-center min-h-screen flex flex-col items-center justify-start text-white px-4 sm:px-6 md:px-8">
-      <div ref={headingRef} className="flex items-center mb-8 sm:mb-12">
-        <h2
-          style={{
-            textShadow: "-5px 8px 4px rgba(0, 0, 0, 0.5)",
-          }}
-          className="text-[40px] sm:text-[50px] md:text-[70px] lg:text-[4.5rem] font-pirata"
-        >
-          Timeline
-        </h2>
-      </div>
-         <div className="flex items-center justify-center h-[40vh] w-[90vw] sm:h-[50vh] sm:w-[80vw] lg:h-[60vh] lg:w-[70vw] bg-cover bg-center relative text-white border rounded-lg">
-            <div className="absolute inset-0 bg-transparent backdrop-blur-md rounded-lg"></div>
-            <div className="relative z-10 text-center p-6">
-                <h1 className="text-2xl font-bold sm:text-3xl lg:text-4xl">
-                    Coming Soon
-                </h1>
-                <p className="mt-4 text-sm sm:text-base lg:text-lg">
-                    We are working on this. Stay tuned!
-                </p>
-            </div>
-        </div>
-        </div>
+  // return (
+  //   <div id="timeline" className="relative bg-cover bg-center min-h-screen flex flex-col items-center justify-start text-white px-4 sm:px-6 md:px-8">
+  //     <div ref={headingRef} className="flex items-center mb-8 sm:mb-12">
+  //       <h2
+  //         style={{
+  //           color: "#FFFFFF",
+  //           textTransform: "uppercase",
+  //           letterSpacing: "2px",
+  //           textShadow: "-5px 8px 4px rgb(0, 0, 0)",
+  //         }}
+  //         className="text-[50px] text-center sm:text-[70px] md:text-[4.5rem] font-bold pirata-one-regular"
+  //       >
+  //         Timeline
+  //       </h2>
+  //     </div>
+  //     <div className="flex justify-center items-center w-full mt-8">
+  //       <div className="flex items-center justify-center h-[40vh] w-[90%] max-w-5xl sm:h-[50vh] lg:h-[60vh] bg-cover bg-center relative text-white border rounded-lg mx-auto">
+  //         <div className="absolute inset-0 bg-transparent backdrop-blur-md rounded-lg"></div>
+  //         <div className="relative z-10 text-center p-6">
+  //           <h1 className="text-2xl font-bold sm:text-3xl lg:text-4xl pirata-one-regular" style={{ textShadow: "-3px 4px 2px rgb(0, 0, 0)" }}>
+  //             Coming Soon
+  //           </h1>
+  //           <p className="mt-4 text-sm sm:text-base lg:text-lg">
+  //             We are working on this. Stay tuned!
+  //           </p>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </div>
 
     //   <div ref={timelineRef} className="relative w-full max-w-5xl">
     //     {/* Vertical Line */}
@@ -190,7 +195,7 @@ const Timeline = () => {
     //     </div>
     //   </div>
     // </div>
-  );
+  // );
 };
 
 // const TimelineItem = ({ title, date, detail }) => (
