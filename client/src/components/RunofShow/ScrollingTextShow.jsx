@@ -3,95 +3,95 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-// Event schedule data
-const dayData = {
-  "DAY 1": [
-    { "Event": "Arrival", "Timing": "8:00 AM", "Venue": "Auditorium" },
-    { "Event": "Checkin", "Timing": "11:00-2:00 PM", "Venue": "Auditorium" },
-    { "Event": "Opening Ceremony", "Timing": "2:00-4:00 PM", "Venue": "Auditorium" },
-    { "Event": "Hacking Begins", "Timing": "4:00 PM", "Venue": "New Lecture Hall" },
-    { "Event": "Snack Time", "Timing": "5:30-6:00 PM", "Venue": "New Lecture Hall" },
-    { "Event": "Github Workshop", "Timing": "6:00-6:45 PM", "Venue": "New Lecture Hall" },
-    { "Event": "Dinner", "Timing": "7:45 PM", "Venue": "Mess" }
-  ],
-  "DAY 2": [
-    { "Event": "Breakfast", "Timing": "8:00 AM", "Venue": "Mess" },
-    { "Event": "Hacking Phase I", "Timing": "9:00 AM", "Venue": "New Lecture Hall" },
-    { "Event": "Mentor Shift Active", "Timing": "10:00 AM - 11:30 AM", "Venue": "New Lecture Hall" },
-    { "Event": "DevRelSquad Workshop", "Timing": "11:30 AM - 12:15 AM", "Venue": "New Lecture Hall" },
-    { "Event": "Lunch", "Timing": "12:20 PM - 2:00 PM", "Venue": "Mess" },
-    { "Event": "Hacking Phase II", "Timing": "2:00 PM - 3:00 PM", "Venue": "New Lecture Hall" },
-    { "Event": "Mentors Shift 2", "Timing": "2:30 PM", "Venue": "New Lecture Hall" },
-    { "Event": "MLH Mini event/talk", "Timing": "3:00 PM - 4:00 PM", "Venue": "New Lecture Hall" },
-    { "Event": "Evaluation Phase 1", "Timing": "4:30 PM", "Venue": "New Lecture Hall" },
-    { "Event": "Snack Time", "Timing": "5:30 PM - 6:00 PM", "Venue": "New Lecture Hall" },
-    { "Event": "Speaker's Talk", "Timing": "7:00 PM - 8:00 PM", "Venue": "New Lecture Hall" },
-    { "Event": "Dinner", "Timing": "8:00 PM - 9:00 PM", "Venue": "Mess" },
-    { "Event": "Online Mentor Shift", "Timing": "10:00 PM", "Venue": "Online" }
-  ],
-  "DAY 3": [
-    { "Event": "Breakfast", "Timing": "7:45 AM", "Venue": "Mess" },
-    { "Event": "Soft Submission Deadline", "Timing": "9:00 AM - 9:30 AM", "Venue": "New Lecture Hall" },
-    { "Event": "Hard Submission", "Timing": "9:30 AM - 10:00 AM", "Venue": "New Lecture Hall" },
-    { "Event": "Judging Slot", "Timing": "10:30 AM - 12:30 PM", "Venue": "New Lecture Hall" },
-    { "Event": "Lunch", "Timing": "12:30 PM - 2:00 PM", "Venue": "Mess" },
-    { "Event": "Closing and Result", "Timing": "3:00 PM - 5:00 PM", "Venue": "Auditorium" }
-  ]
-};
+// // Event schedule data
+// const dayData = {
+//   "DAY 1": [
+//     { "Event": "Arrival", "Timing": "8:00 AM", "Venue": "Auditorium" },
+//     { "Event": "Checkin", "Timing": "11:00-2:00 PM", "Venue": "Auditorium" },
+//     { "Event": "Opening Ceremony", "Timing": "2:00-4:00 PM", "Venue": "Auditorium" },
+//     { "Event": "Hacking Begins", "Timing": "4:00 PM", "Venue": "New Lecture Hall" },
+//     { "Event": "Snack Time", "Timing": "5:30-6:00 PM", "Venue": "New Lecture Hall" },
+//     { "Event": "Github Workshop", "Timing": "6:00-6:45 PM", "Venue": "New Lecture Hall" },
+//     { "Event": "Dinner", "Timing": "7:45 PM", "Venue": "Mess" }
+//   ],
+//   "DAY 2": [
+//     { "Event": "Breakfast", "Timing": "8:00 AM", "Venue": "Mess" },
+//     { "Event": "Hacking Phase I", "Timing": "9:00 AM", "Venue": "New Lecture Hall" },
+//     { "Event": "Mentor Shift Active", "Timing": "10:00 AM - 11:30 AM", "Venue": "New Lecture Hall" },
+//     { "Event": "DevRelSquad Workshop", "Timing": "11:30 AM - 12:15 AM", "Venue": "New Lecture Hall" },
+//     { "Event": "Lunch", "Timing": "12:20 PM - 2:00 PM", "Venue": "Mess" },
+//     { "Event": "Hacking Phase II", "Timing": "2:00 PM - 3:00 PM", "Venue": "New Lecture Hall" },
+//     { "Event": "Mentors Shift 2", "Timing": "2:30 PM", "Venue": "New Lecture Hall" },
+//     { "Event": "MLH Mini event/talk", "Timing": "3:00 PM - 4:00 PM", "Venue": "New Lecture Hall" },
+//     { "Event": "Evaluation Phase 1", "Timing": "4:30 PM", "Venue": "New Lecture Hall" },
+//     { "Event": "Snack Time", "Timing": "5:30 PM - 6:00 PM", "Venue": "New Lecture Hall" },
+//     { "Event": "Speaker's Talk", "Timing": "7:00 PM - 8:00 PM", "Venue": "New Lecture Hall" },
+//     { "Event": "Dinner", "Timing": "8:00 PM - 9:00 PM", "Venue": "Mess" },
+//     { "Event": "Online Mentor Shift", "Timing": "10:00 PM", "Venue": "Online" }
+//   ],
+//   "DAY 3": [
+//     { "Event": "Breakfast", "Timing": "7:45 AM", "Venue": "Mess" },
+//     { "Event": "Soft Submission Deadline", "Timing": "9:00 AM - 9:30 AM", "Venue": "New Lecture Hall" },
+//     { "Event": "Hard Submission", "Timing": "9:30 AM - 10:00 AM", "Venue": "New Lecture Hall" },
+//     { "Event": "Judging Slot", "Timing": "10:30 AM - 12:30 PM", "Venue": "New Lecture Hall" },
+//     { "Event": "Lunch", "Timing": "12:30 PM - 2:00 PM", "Venue": "Mess" },
+//     { "Event": "Closing and Result", "Timing": "3:00 PM - 5:00 PM", "Venue": "Auditorium" }
+//   ]
+// };
 
 const ScrollingTextShow = () => {
-  const scrollContainerRef = useRef(null);
+//   const scrollContainerRef = useRef(null);
 
-  // Ensure scroll starts at the leftmost position on mount
-  useEffect(() => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollLeft = 0;
-    }
-  }, []);
+//   // Ensure scroll starts at the leftmost position on mount
+//   useEffect(() => {
+//     if (scrollContainerRef.current) {
+//       scrollContainerRef.current.scrollLeft = 0;
+//     }
+//   }, []);
 
-  const fadeIn = {
-    hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
-  };
+//   const fadeIn = {
+//     hidden: { opacity: 0, y: 30 },
+//     show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+//   };
 
-  const slideIn = {
-    hidden: { opacity: 0, x: -50 },
-    show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
-  };
+//   const slideIn = {
+//     hidden: { opacity: 0, x: -50 },
+//     show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
+//   };
 
-  const createScrollingContainer = (events) => (
-    <motion.ul 
-      variants={fadeIn}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
-      className="flex flex-col space-y-3 w-[300px]"
-    >
-      {events.map((item, index) => (
-        <motion.li
-          key={index}
-          className="w-full cursor-pointer p-3 text-center text-sm md:text-base font-semibold bg-gradient-to-b from-[rgba(0,0,57,0.7)] to-[rgba(2,29,59,0.7)] text-white rounded-lg shadow-xl border-b-2 border-[#D2A374] transition-all"
-        >
-          <div className="pb-3">{item.Event}</div>
-          <p className="text-center font-normal">Time: {item.Timing}</p>
-          <p className="text-center font-normal">Venue: {item.Venue}</p>
-        </motion.li>
-      ))}
-    </motion.ul>
-  );
+//   const createScrollingContainer = (events) => (
+//     <motion.ul 
+//       variants={fadeIn}
+//       initial="hidden"
+//       whileInView="show"
+//       viewport={{ once: true, amount: 0.2 }}
+//       className="flex flex-col space-y-3 w-[300px]"
+//     >
+//       {events.map((item, index) => (
+//         <motion.li
+//           key={index}
+//           className="w-full cursor-pointer p-3 text-center text-sm md:text-base font-semibold bg-gradient-to-b from-[rgba(0,0,57,0.7)] to-[rgba(2,29,59,0.7)] text-white rounded-lg shadow-xl border-b-2 border-[#D2A374] transition-all"
+//         >
+//           <div className="pb-3">{item.Event}</div>
+//           <p className="text-center font-normal">Time: {item.Timing}</p>
+//           <p className="text-center font-normal">Venue: {item.Venue}</p>
+//         </motion.li>
+//       ))}
+//     </motion.ul>
+//   );
 
-  const SliderItem = ({ children, day }) => (
-    <motion.div
-      variants={slideIn}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
-      className="w-[300px] flex-shrink-0 flex flex-col items-center snap-start overflow-visible"
-    >
-      <h2 className="text-white text-lg md:text-[40px] font-bold mt-5 mb-5">{day}</h2>
-      {children}
-    </motion.div>
-  );
+//   const SliderItem = ({ children, day }) => (
+//     <motion.div
+//       variants={slideIn}
+//       initial="hidden"
+//       whileInView="show"
+//       viewport={{ once: true, amount: 0.2 }}
+//       className="w-[300px] flex-shrink-0 flex flex-col items-center snap-start overflow-visible"
+//     >
+//       <h2 className="text-white text-lg md:text-[40px] font-bold mt-5 mb-5">{day}</h2>
+//       {children}
+//     </motion.div>
+//   );
 
   return (
     <div className="relative w-full max-w-full flex flex-col items-center justify-center">
@@ -106,7 +106,7 @@ const ScrollingTextShow = () => {
         Run of Show
       </motion.h1>
 
-      {/* Horizontal Scrollable Container */}
+      {/* Horizontal Scrollable Container
       <div
         ref={scrollContainerRef}
         className="w-full overflow-x-auto flex items-start justify-start lg:justify-center scrollbar-hide scroll-smooth snap-x snap-mandatory"
@@ -119,7 +119,18 @@ const ScrollingTextShow = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+        <div className="flex items-center justify-center h-[40vh] w-[90vw] sm:h-[50vh] sm:w-[80vw] lg:h-[60vh] lg:w-[70vw] bg-cover bg-center relative text-white border rounded-lg">
+            <div className="absolute inset-0 bg-transparent backdrop-blur-md rounded-lg"></div>
+            <div className="relative z-10 text-center p-6">
+                <h1 className="text-2xl font-bold sm:text-3xl lg:text-4xl">
+                    Coming Soon
+                </h1>
+                <p className="mt-4 text-sm sm:text-base lg:text-lg">
+                    We are working on this. Stay tuned!
+                </p>
+            </div>
+        </div>
     </div>
   );
 };
