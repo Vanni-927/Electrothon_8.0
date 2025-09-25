@@ -93,46 +93,52 @@ const ScrollingTextShow = () => {
 //     </motion.div>
 //   );
 
-  return (
-    <div className="relative w-full max-w-full flex flex-col items-center justify-center">
-      {/* Title */}
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        style={{ textShadow: "-5px 8px 4px rgba(0, 0, 0, 0.5)" }}
-        className="w-full py-4 md:py-6 text-center text-xl md:text-6xl font-pirata text-white"
-      >
-        Run of Show
-      </motion.h1>
+  return //(
+    // <div className="relative w-full max-w-full flex flex-col items-center justify-center">
+    //   {/* Title */}
+    //   <motion.h1
+    //     initial={{ opacity: 0, y: -20 }}
+    //     animate={{ opacity: 1, y: 0 }}
+    //     transition={{ duration: 0.8, ease: "easeOut" }}
+    //     style={{
+    //       color: "#FFFFFF",
+    //       letterSpacing: "2px",
+    //       textShadow: "-5px 8px 4px rgb(0, 0, 0)",
+    //     }}
+    //     className="text-[50px] text-center sm:text-[70px] md:text-[4.5rem] font-bold pirata-one-regular"
+    //   >
+    //     Run of Show
+    //   </motion.h1>
 
-      {/* Horizontal Scrollable Container
-      <div
-        ref={scrollContainerRef}
-        className="w-full overflow-x-auto flex items-start justify-start lg:justify-center scrollbar-hide scroll-smooth snap-x snap-mandatory"
-        style={{ overflow: 'auto hidden' }}
-      >
-        <div className="flex space-x-10 px-5 max-w-max">
-          {Object.keys(dayData).map((day) => (
-            <div key={day} className="flex items-start justify-center">
-              <SliderItem day={day}>{createScrollingContainer(dayData[day])}</SliderItem>
-            </div>
-          ))}
-        </div>
-      </div> */}
-        <div className="flex items-center justify-center h-[40vh] w-[90vw] sm:h-[50vh] sm:w-[80vw] lg:h-[60vh] lg:w-[70vw] bg-cover bg-center relative text-white border rounded-lg">
-            <div className="absolute inset-0 bg-transparent backdrop-blur-md rounded-lg"></div>
-            <div className="relative z-10 text-center p-6">
-                <h1 className="text-2xl font-bold sm:text-3xl lg:text-4xl">
-                    Coming Soon
-                </h1>
-                <p className="mt-4 text-sm sm:text-base lg:text-lg">
-                    We are working on this. Stay tuned!
-                </p>
-            </div>
-        </div>
-    </div>
-  );
+    //   {/* Horizontal Scrollable Container
+    //   <div
+    //     ref={scrollContainerRef}
+    //     className="w-full overflow-x-auto flex items-start justify-start lg:justify-center scrollbar-hide scroll-smooth snap-x snap-mandatory"
+    //     style={{ overflow: 'auto hidden' }}
+    //   >
+    //     <div className="flex space-x-10 px-5 max-w-max">
+    //       {Object.keys(dayData).map((day) => (
+    //         <div key={day} className="flex items-start justify-center">
+    //           <SliderItem day={day}>{createScrollingContainer(dayData[day])}</SliderItem>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div> */}
+    //     <div className="flex justify-center items-center w-full mt-8">
+    //     <div className="flex items-center justify-center h-[40vh] w-[90%] max-w-5xl sm:h-[50vh] lg:h-[60vh] bg-cover bg-center relative text-white border rounded-lg mx-auto">
+    //       <div className="absolute inset-0 bg-transparent backdrop-blur-md rounded-lg"></div>
+    //       <div className="relative z-10 text-center p-6">
+    //         <h1 className="text-2xl font-bold sm:text-3xl lg:text-4xl pirata-one-regular" style={{ textShadow: "-3px 4px 2px rgb(0, 0, 0)" }}>
+    //           Coming Soon
+    //         </h1>
+    //         <p className="mt-4 text-sm sm:text-base lg:text-lg">
+    //           We are working on this. Stay tuned!
+    //         </p>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+  // );
 };
 
 export default ScrollingTextShow;

@@ -14,14 +14,14 @@ const Cannonball = () => {
                 <div className="text-lg md:text-2xl font-bold">
                 <CountUp
                     from={0}
-                    to={60}
+                    to={2500}
                     separator=","
                     direction="up"
                     duration={1}
                     className="count-up-text"
                 />+
                 </div>
-                <div className="text-xs md:text-lg">Software Projects</div>
+                <div className="text-xs md:text-lg">Registrations</div>
             </div>
         </div>
     );
