@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap");
+
+/* Class for general looks */
+.looks {
+  font-family: 'Jacques Francois', serif !important;
+}
+
+/* FAQ Heading Font */
+.faq-heading {
+  font-family: 'Pirata One', cursive !important;
+}
+
+/* FAQ Question Font */
+.faq-question {
+  font-family: 'Jacques Francois', serif !important;
+}
+
+.faq-question, .faq-heading {
+  color: white !important;
+  z-index: 10;
+}
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
