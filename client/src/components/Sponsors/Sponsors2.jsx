@@ -58,7 +58,7 @@ const Sponsors2 = () => {
 
       {/* Treasurer Sponsors Section */}
       <div className="w-full flex flex-col items-center bg-transparent">
-        <SubHeading>Treasurer Sponsors</SubHeading>
+        {/* <SubHeading>Treasurer Sponsors</SubHeading> */}
         <div className="mt-9">
           <div className="flex flex-wrap justify-center flex-row gap-14">
             {[polygon, ethindia, Aptos, mongo, midnight, streamlit, cf , gemini].map((logo, index) => (
@@ -72,7 +72,7 @@ const Sponsors2 = () => {
 
       {/* Chamberlain Sponsors Section */}
       <div className="w-full items-center mt-24 bg-transparent">
-        <SubHeading>Chamberlain Sponsors</SubHeading>
+        {/* <SubHeading>Chamberlain Sponsors</SubHeading> */}
         <div className="mt-9">
           <div className="flex flex-wrap justify-center flex-row gap-14">
             <motion.div variants={fadeIn}>
@@ -93,7 +93,7 @@ const Sponsors2 = () => {
 
       {/* In-Kind Sponsors Section */}
       <div className="w-full items-center mt-10 bg-transparent">
-        <SubHeading>In-kind Sponsors</SubHeading>
+        {/* <SubHeading>In-Kind Sponsors</SubHeading> */}
         <div className="mt-0">
           <div className="flex flex-wrap justify-center flex-row gap-5">
             {[appwrite, Protoio, theDevArmy, SolidityScan, xyzwhite, CredShields, EMTwhite, slidologo, langdb, dominos].map((logo, index) => (
