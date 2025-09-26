@@ -13,6 +13,11 @@ import devfolioWhite2x from "../../assets/devfolioWhite2x.png";
 import mlhw from "../../assets/mlh_white.png";
 import GitHub from "../../assets/GitHub_Logo_White.png";
 
+// TODO: import your treasurer / chamberlain / inkind logo files here
+// import polygon from "../../assets/logos/polygon.png";
+// import ethindia from "../../assets/logos/ethindia.png";
+// ...
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
@@ -27,6 +32,40 @@ const staggerContainer = {
 };
 
 const Sponsors1 = () => {
+  // main sponsors (already imported)
+  const mainSponsors = [
+    { logo: chancellorWhite },
+    { logo: devfolioWhite2x },
+    { logo: GitHub }
+  ];
+
+  // Replace the arrays below with your real logo imports
+  const treasurerLogos = [
+    // { logo: polygon },
+    // { logo: ethindia },
+    // ...
+  ];
+
+  const chamberlainLogos = [
+    // { logo: SJVNLogo },
+    // { logo: quillAi },
+    // ...
+  ];
+
+  const inkindLogos = [
+    // { logo: appwrite },
+    // { logo: Protoio },
+    // ...
+  ];
+
+  // combine everything into a single Sponsors grid
+  const allSponsors = [
+    ...mainSponsors,
+    ...treasurerLogos,
+    ...chamberlainLogos,
+    ...inkindLogos
+  ];
+
   return (
     <motion.div
       id="sponsors"
@@ -41,26 +80,34 @@ const Sponsors1 = () => {
       </motion.div>
 
       {/* Event Partner Section */}
-      <motion.div variants={fadeInUp} className="container flex flex-col items-center mb-9 bg-transparent">
+      <motion.div
+        variants={fadeInUp}
+        className="container flex flex-col items-center mb-9 bg-transparent"
+      >
         <SubHeading>Event Partner</SubHeading>
         <Eventpart companyLogos={[{ logo: mlhw }]} size={{ width: "45vw", height: "30vh" }} />
       </motion.div>
 
-      {/* Chancellor Sponsors Section */}
-      <motion.div className="container flex flex-col items-center bg-transparent" variants={fadeInUp}>
-        <SubHeading>Chancellor Sponsors</SubHeading>
+      {/* Sponsors Section (combined) */}
+      <motion.div
+        className="container flex flex-col items-center bg-transparent"
+        variants={fadeInUp}
+      >
+        <SubHeading>Previous Sponsors</SubHeading>
 
         {/* Sponsor Logos with Staggered Animation */}
         <motion.div className="flex flex-wrap justify-center flex-row gap-14" variants={staggerContainer}>
-          <motion.div variants={fadeInUp}>
-            <Box companyLogos={[{ logo: chancellorWhite }]} size={{ width: "45vw", height: "30vh" }} />
-          </motion.div>
-          <motion.div variants={fadeInUp}>
-            <Box companyLogos={[{ logo: devfolioWhite2x }]} size={{ width: "45vw", height: "30vh" }} />
-          </motion.div>
-          <motion.div variants={fadeInUp}>
-            <Box companyLogos={[{ logo: GitHub }]} size={{ width: "45vw", height: "30vh" }} />
-          </motion.div>
+          {allSponsors.length === 0 ? (
+            <motion.div variants={fadeInUp}>
+              <p className="text-sm text-gray-300">No sponsor logos added yet — import and add them to the arrays in this file.</p>
+            </motion.div>
+          ) : (
+            allSponsors.map((item, idx) => (
+              <motion.div variants={fadeInUp} key={idx}>
+                <Box companyLogos={[{ logo: item.logo }]} size={{ width: "45vw", height: "30vh" }} />
+              </motion.div>
+            ))
+          )}
         </motion.div>
       </motion.div>
     </motion.div>
