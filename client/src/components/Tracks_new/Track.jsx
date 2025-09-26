@@ -28,7 +28,7 @@ const Explore = () => {
         }}>
         Themes
       </div>
-      <div className="mt-12 mb-20 sm:mb-8 md:px-24 xl:px-2 xl:mx-24 2xl:mx-28 flex lg:flex-row flex-col min-h-[85vh] md:min-h-[50vh] gap-10 md:gap-8">
+      {/* <div className="mt-12 mb-20 sm:mb-8 md:px-24 xl:px-2 xl:mx-24 2xl:mx-28 flex lg:flex-row flex-col min-h-[85vh] md:min-h-[50vh] gap-10 md:gap-8">
           {tabData.map((world, index) => (
             <ExploreCard
               key={index} // Use index as a fallback
@@ -38,8 +38,8 @@ const Explore = () => {
               handleClick={handleActive}
             />
           ))}
-        </div>
-      {/* <div className="flex justify-center items-center w-full mt-8">
+        </div> */}
+      <div className="flex justify-center items-center w-full mt-8">
         <div className="flex items-center justify-center h-[40vh] w-[90%] max-w-5xl sm:h-[50vh] lg:h-[60vh] bg-cover bg-center relative text-white border rounded-lg mx-auto">
           <div className="absolute inset-0 bg-transparent backdrop-blur-md rounded-lg"></div>
           <div className="relative z-10 text-center p-6">
@@ -51,7 +51,7 @@ const Explore = () => {
             </p>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };
