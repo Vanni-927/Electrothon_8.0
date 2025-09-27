@@ -198,14 +198,14 @@ function Home() {
           {renderSection('slider', Slider)}
           {renderSection('judges', JudgesSection)}
           {renderSection('theme', Theme)}
-          {renderSection('prizes', Prizes)}
-          {renderSection('challenges', Challenges)}
-          {renderSection('timeline', Timeline)}
-          {renderSection('runOfShow', RunofShow)}
+          {/* {renderSection('prizes', Prizes)} */}
+          {/* {renderSection('challenges', Challenges)} */}
+          {/* {renderSection('timeline', Timeline)} */}
+          {/* {renderSection('runOfShow', RunofShow)} */}
           {renderSection('sponsors1', Sponsors1)}
           {renderSection('sponsors2', Sponsors2)}
           {renderSection('sliderT', SliderT)}
-          {renderSection('organizers', Organizers)}
+          {/* {renderSection('organizers', Organizers)} */}
           {renderSection('faqs', Faqs)}
           {renderSection('footer', Footer)}
         </div>
