@@ -77,9 +77,9 @@ const MainPg = () => {
   }, []);
 
   return (
-    <div id="home" className="w-full lg:h-[90vh]">
+    <div id="home" className="w-full lg:h-[65vh] md:h-[60vh] h-[55vh]">
       <Navbar />
-      <div className="flex items-center justify-center sm:space-y-16 space-y-12 h-full flex-col">
+      <div className="flex items-start justify-center sm:space-y-16 space-y-12 flex-col sm:pt-20 pt-16">
         <div className="flex w-full flex-col items-center sm:space-y-10 justify-center">
           {/* Title Animation */}
           <span
@@ -107,21 +107,21 @@ const MainPg = () => {
           </span>
         </div>
 
-        <Devfolio_Button />
+        {/* <Devfolio_Button /> */}
 
         {/* Countdown Timer */}
-        <div className="flex justify-center items-center w-full">
+        {/* <div className="flex justify-center items-center w-full">
           <div className="flex items-center rounded-lg justify-center">
             <div className="relative w-[330px] h-[130px] sm:w-[400px] sm:h-[170px] md:w-[500px] md:h-[200px]">
               {/* <PixelCard
                 className="absolute inset-0 w-full h-full z-10 rounded-lg opacity-50"
                 variant="default"
-              /> */}
+              /> 
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-transparent border-[#7777771c] z-0">
                 <div className="md:text-[53px] sm:text-[40px] text-[30px] strandall sm:tracking-widest tracking-wider text-white leading-none sm:leading-[35px] text-center">
                   Coming Soon!!
                 </div>
-                {/* <div className="abhaya-libre-regular sm:leading-[55px] leading-[40px] md:scale-100 sm:scale-90 scale-75 lg:leading-[75px] flex w-full justify-center items-center">
+                <div className="abhaya-libre-regular sm:leading-[55px] leading-[40px] md:scale-100 sm:scale-90 scale-75 lg:leading-[75px] flex w-full justify-center items-center">
                   <div className="flex items-center justify-center text-[50px] text-[#c7aa73] font-light space-x-1">
                     <span className="flex w-[90px] flex-col items-center justify-center">
                       <span className="md:text-6xl sm:text-5xl text-4xl">{timeLeft.days}</span>
@@ -147,12 +147,13 @@ const MainPg = () => {
                       <span className="text-lg">Seconds</span>
                     </span>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>  
+      </div>
+      */}
+      </div>
     </div>
   );
 };
