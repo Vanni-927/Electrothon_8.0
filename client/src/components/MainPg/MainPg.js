@@ -48,7 +48,7 @@ const MainPg = () => {
           duration: 1,
           ease: "expo.out",
         },
-        "-=0.5" // Starts slightly before the previous animation ends
+        "-=1.5" // Starts slightly before the previous animation ends
       );
     }
 

@@ -17,12 +17,12 @@ const pirataOne = Pirata_One({
 // Framer Motion Variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
-  show: { opacity: 1, y: 0, transition: { duration: 1 } },
+  show: { opacity: 1, y: 0, transition: { duration: 1, delay: 1 } },
 };
 
 const fadeInScale = {
   hidden: { opacity: 0, scale: 0.9 },
-  show: { opacity: 1, scale: 1, transition: { duration: 1, delay: 0.3 } },
+  show: { opacity: 1, scale: 1, transition: { duration: 1, delay: 1 } },
 };
 
 const fadeInDelayed = {
